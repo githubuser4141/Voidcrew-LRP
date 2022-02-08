@@ -246,9 +246,9 @@ Key procs
 
 /datum/language_holder/drone
 	understood_languages = list(/datum/language/drone = list(LANGUAGE_ATOM),
-								/datum/language/machine = list(LANGUAGE_ATOM))
+								/datum/language/machine = list(LANGUAGE_ATOM),
+								/datum/language/common = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/drone = list(LANGUAGE_ATOM))
-	blocked_languages = list(/datum/language/common = list(LANGUAGE_ATOM))
 
 /datum/language_holder/drone/syndicate
 	blocked_languages = list()
@@ -288,12 +288,6 @@ Key procs
 	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
 								/datum/language/slime = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/slime = list(LANGUAGE_ATOM))
-
-/datum/language_holder/squid
-	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
-								/datum/language/rylethian = list(LANGUAGE_ATOM))
-	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
-							/datum/language/rylethian = list(LANGUAGE_ATOM))
 
 /datum/language_holder/swarmer
 	understood_languages = list(/datum/language/swarmer = list(LANGUAGE_ATOM))

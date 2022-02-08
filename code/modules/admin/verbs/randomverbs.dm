@@ -65,7 +65,7 @@
 		return
 
 	if (!sender)
-		sender = input("Who is the message from?", "Sender") as null|anything in list(RADIO_CHANNEL_CENTCOM,RADIO_CHANNEL_SYNDICATE,RADIO_CHANNEL_SOLGOV)		//WS Edit - SolGov Rep
+		sender = input("Who is the message from?", "Sender") as null|anything in list(RADIO_CHANNEL_CENTCOM,RADIO_CHANNEL_SYNDICATE)		//WS Edit - SolGov Rep
 		if(!sender)
 			return
 
@@ -225,9 +225,6 @@
 		if(MUTE_ADMINHELP)
 			mute_string = "adminhelp, admin PM and ASAY"
 			feedback_string = "Adminhelp"
-		if(MUTE_MENTORHELP)
-			mute_string = "mentorhelp"
-			feedback_string = "Mentorhelp"
 		if(MUTE_DEADCHAT)
 			mute_string = "deadchat and DSAY"
 			feedback_string = "Deadchat"
