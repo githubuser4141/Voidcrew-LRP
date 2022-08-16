@@ -11,13 +11,6 @@
 	var/port_x_offset
 	var/port_y_offset
 
-	var/limit
-	var/cost
-	var/short_name
-	var/list/job_slots
-	var/list/name_categories = list("GENERAL")
-	var/prefix = "SV"
-
 /datum/map_template/shuttle/proc/prerequisites_met()
 	return TRUE
 

@@ -19,6 +19,9 @@ SUBSYSTEM_DEF(mapping)
 
 	var/list/maplist
 	var/list/ship_purchase_list
+	var/list/nt_ship_list // VOID EDIT
+	var/list/syn_ship_list // VOID EDIT
+
 
 	var/list/shuttle_templates = list()
 	var/list/shelter_templates = list()
@@ -116,10 +119,13 @@ SUBSYSTEM_DEF(mapping)
 
 /datum/controller/subsystem/mapping/proc/preloadRuinTemplates()
 	// Still supporting bans by filename
-	var/list/banned = generateMapList("[global.config.directory]/lavaruinblacklist.txt")
-	banned += generateMapList("[global.config.directory]/spaceruinblacklist.txt")
-	banned += generateMapList("[global.config.directory]/iceruinblacklist.txt")
-	banned += generateMapList("[global.config.directory]/sandruinblacklist.txt")
+	var/list/banned = generateMapList("[global.config.directory]/ruins/lavaruinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/ruins/spaceruinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/ruins/iceruinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/ruins/sandruinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/ruins/jungleruinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/ruins/reeberuinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/ruins/rockruinblacklist.txt")
 
 	for(var/item in sortList(subtypesof(/datum/map_template/ruin), /proc/cmp_ruincost_priority))
 		var/datum/map_template/ruin/ruin_type = item
@@ -165,6 +171,8 @@ SUBSYSTEM_DEF(mapping)
 #define CHECK_LIST_EXISTS(X) if(!islist(data[X])) { log_world("[##X] missing from json!"); continue; }
 /datum/controller/subsystem/mapping/proc/load_ship_templates()
 	maplist = list()
+	nt_ship_list = list()
+	syn_ship_list = list()
 	ship_purchase_list = list()
 	var/list/filelist = flist("_maps/configs/")
 	for(var/filename in filelist)
@@ -194,9 +202,13 @@ SUBSYSTEM_DEF(mapping)
 		else
 			S.short_name = copytext(S.name, 1, 20)
 		if(istext(data["prefix"]))
-			S.prefix = data["prefix"]
+			S.faction_prefix = data["prefix"]
 		if(islist(data["namelists"]))
 			S.name_categories = data["namelists"]
+
+		if(istext(data["antag_datum"]))
+			var/path = "/datum/antagonist/" + data["antag_datum"]
+			S.antag_datum = text2path(path)
 
 		S.job_slots = list()
 		var/list/job_slot_list = data["job_slots"]
@@ -223,15 +235,22 @@ SUBSYSTEM_DEF(mapping)
 				continue
 
 			S.job_slots[job_slot] = slots
+
+		S.disable_passwords = data["disable_passwords"] ? TRUE : FALSE
 		if(isnum(data["cost"]))
 			S.cost = data["cost"]
-			ship_purchase_list["[S.prefix] [S.name] ([S.cost] [CONFIG_GET(string/metacurrency_name)]s)"] = S // VOIDCREW
+			ship_purchase_list["[S.faction_prefix] [S.name] ([S.cost] [CONFIG_GET(string/metacurrency_name)]s)"] = S // VOIDCREW
 		if(isnum(data["limit"]))
 			S.limit = data["limit"]
 		shuttle_templates[S.file_name] = S
 		map_templates[S.file_name] = S
 		if(isnum(data["roundstart"]) && data["roundstart"])
 			maplist[S.name] = S
+		switch(S.faction_prefix)
+			if("NT-C")
+				nt_ship_list[S.name] = S
+			if("SYN-C")
+				syn_ship_list[S.name] = S
 #undef CHECK_STRING_EXISTS
 #undef CHECK_LIST_EXISTS
 
