@@ -123,6 +123,8 @@
 /turf/closed/wall/rust,
 /area/ruin)
 "in" = (
+/obj/effect/landmark/ore_vein,
+/obj/effect/landmark/ore_vein,
 /turf/closed/mineral,
 /area/asteroid)
 "iy" = (
@@ -362,6 +364,7 @@
 /turf/open/floor/plasteel,
 /area/ruin)
 "It" = (
+/obj/effect/landmark/ore_vein,
 /turf/closed/mineral/gold,
 /area/asteroid)
 "IR" = (
@@ -515,6 +518,7 @@
 /turf/open/floor/plating,
 /area/ruin)
 "Wk" = (
+/obj/effect/landmark/ore_vein,
 /turf/closed/mineral,
 /area/asteroid)
 "Wz" = (

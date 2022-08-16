@@ -872,4 +872,4 @@
 #undef CHIME
 
 /obj/machinery/bot_core/mulebot
-	req_one_access = list(ACCESS_CARGO, ACCESS_ROBOTICS)
+	req_access = list(ACCESS_CARGO)

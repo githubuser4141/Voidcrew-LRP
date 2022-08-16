@@ -20,6 +20,7 @@ All ShuttleMove procs go here
 	if(!(. & MOVE_TURF))
 		return
 
+	var/shuttle_dir = shuttle.dir
 	for(var/i in contents)
 		var/atom/movable/thing = i
 		if(ismob(thing))
@@ -33,13 +34,16 @@ All ShuttleMove procs go here
 				M.visible_message("<span class='warning'>[shuttle] slams into [M]!</span>")
 				SSblackbox.record_feedback("tally", "shuttle_gib", 1, M.type)
 				log_attack("[key_name(M)] was shuttle gibbed by [shuttle].")
-				qdel(M)
+				M.gib()
 
 
 		else //non-living mobs shouldn't be affected by shuttles, which is why this is an else
 			if(istype(thing, /obj/singularity) && !istype(thing, /obj/singularity/narsie)) //it's a singularity but not a god, ignore it.
 				continue
-			qdel(thing)
+			if(!thing.anchored)
+				step(thing, shuttle_dir)
+			else
+				qdel(thing)
 
 // Called on the old turf to move the turf data
 /turf/proc/onShuttleMove(turf/newT, list/movement_force, move_dir)

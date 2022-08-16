@@ -29,6 +29,7 @@
 #include "keybinding_init.dm"
 #include "machine_disassembly.dm"
 #include "outfit_sanity.dm"
+#include "overmap.dm"
 #include "pills.dm"
 #include "plantgrowth_tests.dm"
 #include "quick_swap_sanity.dm"
@@ -49,7 +50,6 @@
 #include "teleporters.dm"
 #include "timer_sanity.dm"
 #include "unit_test.dm"
-#include "voidcrew\overmap.dm"
 
 #undef TEST_ASSERT
 #undef TEST_ASSERT_EQUAL

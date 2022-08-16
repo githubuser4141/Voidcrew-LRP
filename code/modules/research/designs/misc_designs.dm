@@ -288,7 +288,7 @@
 
 /datum/design/plasma_tank
 	name = "Plasma Tank"
-	desc = "An empty plasma tank."
+	desc = "An empty oxygen tank."
 	id = "plasma_tank"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 2000)

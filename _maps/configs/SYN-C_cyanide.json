@@ -16,6 +16,5 @@
         }
 
     },
-    "cost": 200,
-	"disable_passwords": true
+    "cost": 200
 }

@@ -78,6 +78,7 @@
 		for(var/V in GLOB.aiEyes)
 			var/mob/camera/aiEye/E = V
 			E.update_ai_detect_hud()
+
 /* MED/SEC/DIAG HUD HOOKS */
 
 /*

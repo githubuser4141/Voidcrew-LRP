@@ -324,3 +324,4 @@
 
 /mob/living/simple_animal/drone/get_bank_account(hand_first)
 	return SSeconomy.get_dep_account(ACCOUNT_CIV)
+

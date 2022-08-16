@@ -1711,6 +1711,12 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
 	},
+/obj/effect/turf_decal/corner/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/blue{
+	dir = 1
+	},
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 8
 	},
@@ -1728,9 +1734,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
-	},
-/obj/effect/turf_decal/corner/blue{
-	dir = 9
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
@@ -2614,6 +2617,7 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
 "rX" = (
+/obj/item/robot_suit/prebuilt,
 /obj/item/bodypart/chest/robot,
 /obj/item/bodypart/r_leg/robot,
 /obj/item/bodypart/l_leg/robot,
@@ -2633,7 +2637,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/item/robot_suit,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/construction)
 "sf" = (
@@ -2723,11 +2726,14 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
 	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "ospreybridge"
+/obj/effect/turf_decal/corner/blue{
+	dir = 8
 	},
 /obj/effect/turf_decal/corner/blue{
-	dir = 9
+	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ospreybridge"
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
@@ -4205,6 +4211,10 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 8
 	},
+/obj/effect/turf_decal/corner/blue,
+/obj/effect/turf_decal/corner/blue{
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 8
 	},
@@ -4222,9 +4232,6 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "ospreybridge"
-	},
-/obj/effect/turf_decal/corner/blue{
-	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
@@ -4456,8 +4463,9 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 8
 	},
+/obj/effect/turf_decal/corner/blue,
 /obj/effect/turf_decal/corner/blue{
-	dir = 6
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)

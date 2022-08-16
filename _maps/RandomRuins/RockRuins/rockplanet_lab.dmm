@@ -100,7 +100,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/powered)
 "ej" = (
-/obj/machinery/mineral/equipment_vendor,
+/obj/machinery/vending/mining_equipment,
 /turf/open/floor/plasteel,
 /area/ruin/powered)
 "eV" = (

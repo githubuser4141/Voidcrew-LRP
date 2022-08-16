@@ -307,11 +307,7 @@
 /area/ruin/powered/slimerancher)
 "lI" = (
 /obj/structure/disposalpipe/segment,
-/obj/machinery/vending/hydroseeds{
-	default_price = 0;
-	extra_price = 0;
-	fair_market_price = 0
-	},
+/obj/machinery/vending/hydroseeds,
 /turf/open/floor/plating/grass,
 /area/ruin/powered/slimerancher)
 "lT" = (
@@ -380,8 +376,7 @@
 "oq" = (
 /obj/machinery/vending/dinnerware{
 	default_price = 0;
-	extra_price = 0;
-	fair_market_price = 0
+	extra_price = 0
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -610,9 +605,7 @@
 /turf/closed/wall/r_wall,
 /area/ruin/powered/slimerancher)
 "wa" = (
-/obj/item/gun/energy/temperature{
-	pin = /obj/item/firing_pin
-	},
+/obj/item/gun/energy/temperature,
 /obj/structure/closet/wall/red{
 	name = "Weapons Locker";
 	pixel_y = 32
@@ -1427,8 +1420,7 @@
 "Rs" = (
 /obj/machinery/vending/autodrobe/all_access{
 	default_price = 0;
-	extra_price = 0;
-	fair_market_price = 0
+	extra_price = 0
 	},
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,

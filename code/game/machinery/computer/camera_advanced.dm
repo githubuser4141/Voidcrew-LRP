@@ -111,9 +111,6 @@
 		return
 	if(!eyeobj)
 		CreateEye()
-	if(!isturf(eyeobj.loc))
-		qdel(eyeobj)
-		CreateEye()
 
 	if(!eyeobj.eye_initialized)
 		var/camera_location

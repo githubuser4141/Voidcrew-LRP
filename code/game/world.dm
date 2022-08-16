@@ -310,7 +310,7 @@ GLOBAL_VAR(restart_counter)
 	s += "</a>"
 	s += ")"
 	s += " ("
-	s += "<a href=\"https://github.com/voidcrew/Voidcrew-LRP\">"
+	s += "<a href=\"https://discord.gg/edazjdr7Gt\">"
 	s += "Github"
 	s += "</a>"
 	s += ")"

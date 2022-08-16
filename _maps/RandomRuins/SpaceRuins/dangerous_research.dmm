@@ -1958,7 +1958,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
+/turf/open/space/basic,
 /area/ruin/space/has_grav)
 "XX" = (
 /obj/structure/window/reinforced{

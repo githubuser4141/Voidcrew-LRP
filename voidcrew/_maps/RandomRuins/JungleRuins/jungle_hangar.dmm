@@ -32,6 +32,7 @@
 /area/ruin/unpowered)
 "jb" = (
 /obj/structure/closet/firecloset,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "jx" = (
@@ -81,6 +82,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/under/costume/mech_suit/white,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "sL" = (
@@ -101,6 +103,7 @@
 /obj/machinery/power/port_gen/pacman,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "xt" = (
@@ -120,12 +123,14 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/plasma,
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "zC" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Ad" = (
@@ -147,6 +152,7 @@
 /area/ruin/powered)
 "HM" = (
 /obj/structure/closet/emcloset,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Jd" = (
@@ -155,6 +161,7 @@
 /area/ruin/powered)
 "LS" = (
 /obj/machinery/door/poddoor/shutters/preopen,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "LZ" = (
@@ -182,6 +189,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/under/costume/mech_suit,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "SG" = (
@@ -220,7 +228,8 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Xv" = (
-/obj/machinery/door/poddoor/shutters,
+/obj/machinery/door/poddoor/shutters/indestructible,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Xy" = (
@@ -231,6 +240,7 @@
 "XF" = (
 /obj/effect/decal/cleanable/plasma,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/fakelattice,
 /obj/structure/mecha_wreckage/ripley/mkii,
 /turf/open/floor/plating,
 /area/ruin/powered)
@@ -241,10 +251,12 @@
 "YQ" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/under/costume/mech_suit/blue,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Zc" = (
 /obj/structure/mecha_wreckage/marauder,
+/obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/ruin/powered)
 

@@ -9,7 +9,6 @@
 	"job_slots": {
 		"Project Overseer": {
 			"outfit": "/datum/outfit/job/ce/gec",
-			"officer": true,
 			"slots": 1
 		},
 		"Ship Engineer": {

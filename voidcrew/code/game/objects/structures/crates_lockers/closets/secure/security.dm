@@ -13,4 +13,3 @@
 	new /obj/item/clothing/suit/solgov_trenchcoat(src)
 	new /obj/item/clothing/accessory/waistcoat/solgov(src)
 	new /obj/item/clothing/shoes/laceup(src)
-

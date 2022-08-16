@@ -166,7 +166,7 @@
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/unpowered)
 "Ch" = (
-/obj/machinery/mineral/equipment_vendor,
+/obj/machinery/vending/mining_equipment,
 /turf/open/floor/plasteel/mono,
 /area/ruin/unpowered)
 "CL" = (

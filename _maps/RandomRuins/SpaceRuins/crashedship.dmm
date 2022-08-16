@@ -36,8 +36,8 @@
 "ag" = (
 /obj/machinery/porta_turret{
 	dir = 8;
-	installation = /obj/item/gun/energy/lasercannon;
-	set_obj_flags = "EMAGGED"
+	set_obj_flags = "EMAGGED";
+	installation = /obj/item/gun/energy/lasercannon
 	},
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Aft)
@@ -1826,6 +1826,14 @@
 /obj/effect/gibspawner/xeno,
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Midship)
+"ff" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel{
+	icon_state = "panelscorched"
+	},
+/area/awaymission/BMPship/Midship)
 "fg" = (
 /obj/structure/kitchenspike,
 /obj/effect/turf_decal/corner/bar,
@@ -2093,12 +2101,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Midship)
-"fX" = (
-/obj/effect/turf_decal/corner/bar{
-	dir = 1
+"fW" = (
+/turf/open/floor/plasteel{
+	icon_state = "platingdmg3"
 	},
-/obj/effect/turf_decal/corner/bar,
-/turf/open/floor/plasteel,
+/area/awaymission/BMPship/Midship)
+"fX" = (
+/turf/open/floor/plasteel{
+	icon_state = "platingdmg1"
+	},
 /area/awaymission/BMPship/Midship)
 "fY" = (
 /obj/effect/mapping_helpers/airlock/locked,
@@ -2175,8 +2186,8 @@
 "gl" = (
 /obj/machinery/porta_turret{
 	dir = 8;
-	installation = /obj/item/gun/energy/lasercannon;
-	set_obj_flags = "EMAGGED"
+	set_obj_flags = "EMAGGED";
+	installation = /obj/item/gun/energy/lasercannon
 	},
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Fore)
@@ -2290,7 +2301,9 @@
 /area/awaymission/BMPship/Fore)
 "gJ" = (
 /obj/effect/gibspawner/robot,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/airless{
+	icon_state = "floorscorched2"
+	},
 /area/awaymission/BMPship/Fore)
 "gK" = (
 /turf/closed/mineral/random,
@@ -3699,10 +3712,10 @@ ei
 ei
 eJ
 ei
-ei
+ff
 dB
 ce
-fX
+fW
 aq
 gb
 gb
@@ -3803,7 +3816,7 @@ dz
 dz
 dz
 fA
-fX
+ej
 fX
 ge
 gb
@@ -3855,7 +3868,7 @@ ce
 fg
 ce
 ce
-fX
+fW
 fm
 Mx
 gb
